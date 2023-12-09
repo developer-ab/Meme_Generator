@@ -1,14 +1,14 @@
-//vjavascript code for meme generator
+//javascript code for meme generator
 
-// seleting the button
+// selecting the button
 const button = document.getElementById("button");
 
 //adding the eventlistener
 button.addEventListener('click', (e)=> {
-     generate_meme();   // funtion call
+     generate_meme();   // function call
 }, false);
 
-// functoion definition
+// function definition
 async function generate_meme(){
     const raw_data = await fetch("https://meme-api.com/gimme");
     
@@ -21,13 +21,10 @@ async function generate_meme(){
         space.innerHTML = `<a href="${data.postLink}" target="_black"><img src="${data.url}" alt="MEME"></img></a>`;
         creator.innerHTML = `Created By :- ${data.author}`;
     }else{
-        console.log("Nai", raw_data.status);
+        console.log(raw_data.status);
         const title = document.getElementById("title");
         title.innerHTML = "Not Available";
 
     }
     
 }
-
-
-
