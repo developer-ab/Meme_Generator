@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meme Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="uiArea">
+    <div class="header">
+      <h1>MEME Generator</h1>
+    </div>
     <div class="form">
-        <input class="input_box" id="inputBox" type="text" placeholder="Search The Sub-reddit"/> 
-        <input class="input_box" id="inputBoxCount" type="text" placeholder="Enter the no. of memes (<50)"/>
-        <button id="button">
-           Fetch
-        </button>
+      <label>Enter the Sub-reddit:</label><br />
+      <input class="input_box" id="inputBox" type="text" placeholder="Search The Sub-reddit" />
+      <label>Enter Count:</label><br />
+      <input class="input_box" id="inputBoxCount" type="text" placeholder="Enter the no. of memes (<50)" />
+      <button id="button">Fetch</button>
     </div>
-    <div class="container">
-        <div class="main">
-            <p class="title_name" id="title"></p>
-            <a href="https://www.reddit.com" class="meme_space" id="memeSpace" target="_blank"><img src="m2.png" alt="MEME"></a>
-            <p class="meme_creator" id="creatorName"></p>
-          </div>
-          <div class="main">
-            <p class="title_name" id="title"></p>
-            <a href="https://www.reddit.com" class="meme_space" id="memeSpace" target="_blank"><img src="m1.jpeg" alt="MEME"></a>
-            <p class="meme_creator" id="creatorName"></p>
-          </div>
+    
+  </div>
+  
+ 
+  <div class="container">
+    <div class="main">
+      <p class="title_name" id="title"></p>
+      <a href="https://www.reddit.com" class="meme_space" id="memeSpace" target="_blank"><img src="m2.png"
+          alt="MEME" /></a>
+      <p class="meme_creator" id="creatorName"></p>
     </div>
-  </body>
-  <script src="script.js"></script>
+    <div class="main">
+      <p class="title_name" id="title"></p>
+      <a href="https://www.reddit.com" class="meme_space" id="memeSpace" target="_blank"><img src="m1.jpeg"
+          alt="MEME" /></a>
+      <p class="meme_creator" id="creatorName"></p>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
 </html>
